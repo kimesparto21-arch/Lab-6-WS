@@ -1,0 +1,214 @@
+public class FibonacciSeries {
+        public static void main(String[] args) {
+            int n = 10; // Number of terms to display
+            int a = 0, b = 1;
+
+            System.out.print("Fibonacci Series (first " + n + " terms): ");
+            for (int i = 0; i < n; i++) {
+                System.out.print(a + " ");
+                int nextTerm = a + b;
+                a = b;
+                b = nextTerm;
+            }
+            System.out.println();
+        }
+    }
+
+
+public class ArrayOperations {
+        public static void main(String[] args) {
+            int[] numbers = {10, 20, 30, 40, 50};
+            int sum = 0;
+
+            for (int number : numbers) {
+                sum += number;
+            }
+
+            double average = (double) sum / numbers.length;
+
+            System.out.println("Sum of numbers: " + sum);
+            System.out.println("Average of numbers: " + average);
+        }
+    }
+
+public class PalindromeChecker {
+        public static void main(String[] args) {
+            String original = "madam";
+            String reversed = new StringBuilder(original).reverse().toString();
+
+            if (original.equalsIgnoreCase(reversed)) {
+                System.out.println("'" + original + "' is a palindrome.");
+            } else {
+                System.out.println("'" + original + "' is not a palindrome.");
+            }
+        }
+    }
+
+
+
+public class Rectangle {
+        private double length;
+        private double width;
+
+        public Rectangle(double length, double width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        public double calculateArea() {
+            return length * width;
+        }
+
+        public static void main(String[] args) {
+            Rectangle rect = new Rectangle(5.0, 3.0);
+            System.out.println("Area of the rectangle: " + rect.calculateArea());
+        }
+    }
+
+
+
+import java.util.ArrayList;
+    import java.util.List;
+
+    class Product {
+        String name;
+        double price;
+        boolean inStock;
+
+        public Product(String name, double price, boolean inStock) {
+            this.name = name;
+            this.price = price;
+            this.inStock = inStock;
+        }
+
+        public boolean isInStock() {
+            return inStock;
+        }
+    }
+
+    public class ProductStream {
+        public static void main(String[] args) {
+            List<Product> products = new ArrayList<>();
+            products.add(new Product("Laptop", 1200.0, true));
+            products.add(new Product("Mouse", 25.0, true));
+            products.add(new Product("Keyboard", 75.0, false));
+            products.add(new Product("Monitor", 300.0, true));
+            products.add(new Product("Webcam", 50.0, false));
+
+            long inStockCount = products.stream()
+                                        .filter(Product::isInStock)
+                                        .count();
+
+            System.out.println("Number of products in stock: " + inStockCount);
+        }
+    }
+
+
+
+public class FibonacciSeries {
+        public static void main(String[] args) {
+            int n = 10; // Number of terms to display
+            int a = 0, b = 1;
+
+            System.out.print("Fibonacci Series (first " + n + " terms): ");
+            for (int i = 0; i < n; i++) {
+                System.out.print(a + " ");
+                int nextTerm = a + b;
+                a = b;
+                b = nextTerm;
+            }
+            System.out.println();
+        }
+    }
+
+
+public class ArrayOperations {
+        public static void main(String[] args) {
+            int[] numbers = {10, 20, 30, 40, 50};
+            int sum = 0;
+
+            for (int number : numbers) {
+                sum += number;
+            }
+
+            double average = (double) sum / numbers.length;
+
+            System.out.println("Sum of numbers: " + sum);
+            System.out.println("Average of numbers: " + average);
+        }
+    }
+
+public class PalindromeChecker {
+        public static void main(String[] args) {
+            String original = "madam";
+            String reversed = new StringBuilder(original).reverse().toString();
+
+            if (original.equalsIgnoreCase(reversed)) {
+                System.out.println("'" + original + "' is a palindrome.");
+            } else {
+                System.out.println("'" + original + "' is not a palindrome.");
+            }
+        }
+    }
+
+
+
+public class Rectangle {
+        private double length;
+        private double width;
+
+        public Rectangle(double length, double width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        public double calculateArea() {
+            return length * width;
+        }
+
+        public static void main(String[] args) {
+            Rectangle rect = new Rectangle(5.0, 3.0);
+            System.out.println("Area of the rectangle: " + rect.calculateArea());
+        }
+    }
+
+
+
+import java.util.ArrayList;
+    import java.util.List;
+
+    class Product {
+        String name;
+        double price;
+        boolean inStock;
+
+        public Product(String name, double price, boolean inStock) {
+            this.name = name;
+            this.price = price;
+            this.inStock = inStock;
+        }
+
+        public boolean isInStock() {
+            return inStock;
+        }
+    }
+
+    public class ProductStream {
+        public static void main(String[] args) {
+            List<Product> products = new ArrayList<>();
+            products.add(new Product("Laptop", 1200.0, true));
+            products.add(new Product("Mouse", 25.0, true));
+            products.add(new Product("Keyboard", 75.0, false));
+            products.add(new Product("Monitor", 300.0, true));
+            products.add(new Product("Webcam", 50.0, false));
+
+            long inStockCount = products.stream()
+                                        .filter(Product::isInStock)
+                                        .count();
+
+            System.out.println("Number of products in stock: " + inStockCount);
+        }
+    }
+
+
+
